@@ -3,18 +3,23 @@
 
 ### Features
 - Create *Bodies* with 3 initial parameters:
-  - mass                     type: **float**
-  - position vector          type: **np.array**
-  - init. velocity vector    type: **np.array**
+  param  |  dtype  |  description
+  ------ | --------- | ---------
+  *mass* | **float** | mass of the body
+  *pos* | **np.array** | position vector <i, j, k> 
+  *vel*    | **np.array** | scape velocity vector <i, j, k>
   
 - Create an *NBPSolver* with two parameters:
-  - list of bodies      type: **list**
-  - time step           type: **float**
+  param  |  dtype  |  description
+  ------ | --------- | ---------
+  *bodies* | **list** | list of bodies
+  *ts*     | **float**       | time step 
     
-Utilize the NBPSolver method *solve_timestep* to update the bodies position after a the specified time step has spent.
+Utilize the NBPSolver method **_solve_timestep_** to update each body's position after the specified time step has passed.
 
-This package offers flexibility in terms of the desired output, since it works by updating its list of bodies on each time step iteration. This also allows for flexibility in terms of the number of bodies desired at any given instant (list of bodies can be modified on the run).
+This package offers flexibility in terms of handling the output, as well as dinamically adding or removing bodies during run time.
 
 ### TODO:
   - Add different integration methods
   - Add test cases
+  - Add efficiency monitoring
