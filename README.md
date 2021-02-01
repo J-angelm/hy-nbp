@@ -15,9 +15,9 @@
   *bodies* | **list** | list of bodies
   *ts*     | **float**       | time step 
     
-Utilize the NBPSolver method **_solve_timestep_** to update each body's position after the specified time step has passed.
+- Utilize the NBPSolver method **_solve_timestep_** to update each body's position after the specified time step has passed.
 
-This package offers flexibility in terms of handling the output, as well as dinamically adding or removing bodies during run time.
+- This package offers flexibility in terms of handling the output, as well as dinamically adding or removing bodies during run time.
 
 ### TODO:
   - Add different integration methods
