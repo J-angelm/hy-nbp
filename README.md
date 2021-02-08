@@ -22,4 +22,4 @@
 ### TODO:
   - Add different integration methods
   - Add test cases
-  - Add efficiency monitoring
+  - Add efficiency monitoring (*hint: create a context manager to monitor execution times)
