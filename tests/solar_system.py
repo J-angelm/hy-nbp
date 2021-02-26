@@ -1,5 +1,5 @@
 import numpy as np
-from nbp.NBPSolver import Body, NBPSolver
+from nbp.NBPSolver import NBPSolver, Body
 
 if __name__ == "__main__":
     sun     = Body(1.988E30, np.array([0, 0, 0]).astype(float), 
@@ -26,9 +26,10 @@ if __name__ == "__main__":
                 np.array([31020.62, 0, -91.81]).astype(float), "moon")
     body_list = [sun, mercury, venus, earth, mars, jupiter, saturn, 
                     uranus, neptune, pluto, moon]
-    ts = 10000
+                    
+    ts = 100                        # 100 seconds
     nbp_solver = NBPSolver(body_list, ts)
 
-    time_lim = 3.1536E7*21
-    frame_size = 86400
+    time_lim = 3.1536E7*6           # 6 years
+    frame_size = 86400              # 1 day
     nbp_solver.plot_animation(time_lim, frame_size, "solar_sys.gif")
