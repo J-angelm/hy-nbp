@@ -1,5 +1,5 @@
-# N Body Problem API
-#### *An easy implementation of the N Body Problem of Celestial Mechanics*
+# N Body Problem
+#### *A quick implementation of the N Body Problem of Celestial Mechanics*
 
 ### Features
 - Create *Bodies* with 3 initial parameters:
@@ -14,6 +14,8 @@
   ------ | --------- | ---------
   *bodies* | **list** | list of bodies
   *ts*     | **float**       | time step 
+
+- Plot trajectories animation
     
 - Utilize the NBPSolver method **_solve_timestep_** to update each body's position after the specified time step has passed.
 
@@ -21,5 +23,4 @@
 
 ### TODO:
   - Add different integration methods
-  - Add test cases
   - Add efficiency monitoring (*hint: create a context manager to monitor execution times)
