@@ -14,10 +14,15 @@
   ------ | --------- | ---------
   *bodies* | **list** | list of bodies
   *ts*     | **float**       | time step 
-
-- Plot trajectories animation
     
-- Utilize the NBPSolver method **_solve_timestep_** to update each body's position after the specified time step has passed.
+- Utilize the NBPSolver method **_solve_timestep()_** to update each body's position after the specified time step has passed.
+
+- Call the method **_plot_animation(time_lim, frame_size, output)_**, where the parameters are:
+  param  |  dtype  |  description
+  ------ | --------- | ---------
+  *time_lim* | **int** | limit number of seconds
+  *frame_size*     | **int**       | amount of iterations before recording a frame
+  *output*  | **string** | output file name (include file extension, e.g. output.gif)
 
 - This package offers flexibility in terms of handling the output, as well as dinamically adding or removing bodies during run time.
 
